@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  margin: 50px 0;
+}
+.items{
+  width: 100%
+}
+.items div{
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+.items input, #secName, span{
+  display: inline-block;
+  padding: 10px;
+  width: 40%;
+  margin-right: 5%;
+  border-radius: 10px;
+  border: none;
+}
+.items input:focus, #secName:focus{
+  outline: none;
+  border: none;
+  border-bottom: 4px solid #5a7f78;
+}
+.items button, #delete{
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  background-color: #1d3738;
+  color: white;
+  font-weight: bolder;
+}
+#secName{
+  width: 80% !important;
+}
+#add{
+  align-self: center;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #04a8a8;
+  color: white;
+  font-weight: bolder;
+}
+#delete{
+  width: 15% !important;
+  height: 40px !important;
+  border-radius: 10px !important;
+}

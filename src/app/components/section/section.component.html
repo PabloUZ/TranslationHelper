@@ -1,0 +1,15 @@
+<section>
+  <input id="secName" type="text" [value]="seccion[0]" [(ngModel)]="seccion[0]">
+  <button id="delete" (click)="eliminarCat()">Eliminar Categoria</button>
+  <div class="items">
+    <span>Español</span>
+    <span>English</span>
+    <div *ngFor="let trad of seccion[1]">
+      <input type="text" [value]="trad[0]" [(ngModel)]="trad[0]">
+      <input type="text" [value]="trad[1]" [(ngModel)]="trad[1]">
+      <button (click)="eliminar(seccion[1].indexOf(trad))">X</button>
+    </div>
+  </div>
+  <button id="add" (click)="agregar()">+</button>
+  <hr style="border: 2px solid #5a7f78; margin-top: 15px;">
+</section>
